@@ -15,7 +15,7 @@ var game = new Phaser.Game(config);
 var peixinho;
 
 function preload () {
-    this.load.image('inteli', "assets/inteli.jpg");
+    this.load.image('inteli', "assets/inteli.png");
 
     //carregar o peixe
     this.load.image('peixe', 'assets/peixes/peixe1.png');
