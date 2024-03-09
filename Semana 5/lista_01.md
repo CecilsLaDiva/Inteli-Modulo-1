@@ -23,13 +23,13 @@ print(a)
 
 Escolha a opção que responde corretamente:
 
-a) Imprime os números pares de 1 a 10.
+~~a) Imprime os números pares de 1 a 10.~~
 
-b) Imprime os números ímpares de 1 a 10.
+~~b) Imprime os números ímpares de 1 a 10.~~
 
 c) Imprime os números pares de 2 a 10.
 
-d) Imprime os números ímpares de 2 a 10.
+~~d) Imprime os números ímpares de 2 a 10.~~
 
 ______
 
@@ -41,11 +41,11 @@ No lugar onde está escrito “// linha” qual das opções abaixo deve estar p
 
 A) let carro = new Carro("Toyota");
 
-B) let ligar = new ligar("Toyota");
+~~B) let ligar = new ligar("Toyota");~~
 
-C) class Moto extends Veiculo {};
+~~C) class Moto extends Veiculo {};~~
 
-D) carro1.ligar();
+~~D) carro1.ligar();~~
 
 ______
 
@@ -57,11 +57,11 @@ Escolha a opção que responde corretamente:
 
 A) 18
 
-B) 16
+~~B) 16~~
 
-C) 14
+~~C) 14~~
 
-D) 12
+~~D) 12~~
 
 ______
 
@@ -69,11 +69,11 @@ ______
 
 A) ![Uma imagem](assets/ex04_1.PNG)
 
-B) ![Uma imagem](assets/ex04_2.PNG)
+~~B) ![Uma imagem](assets/ex04_2.PNG)~~
 
-C) ![Uma imagem](assets/ex04_3.PNG)
+~~C) ![Uma imagem](assets/ex04_3.PNG)~~
 
-D) ![Uma imagem](assets/ex04_4.PNG)
+~~D) ![Uma imagem](assets/ex04_4.PNG)~~
 
 ______
 
@@ -81,11 +81,11 @@ ______
 
 A) ![Uma imagem](assets/ex05_1.PNG)
 
-B) ![Uma imagem](assets/ex05_2.PNG)
+~~B) ![Uma imagem](assets/ex05_2.PNG)~~
 
-C) ![Uma imagem](assets/ex05_3.PNG)
+~~C) ![Uma imagem](assets/ex05_3.PNG)~~
 
-D) ![Uma imagem](assets/ex05_4.PNG)
+~~D) ![Uma imagem](assets/ex05_4.PNG)~~
 
 ______
 
@@ -97,94 +97,165 @@ Qual será a saída do código acima?
 
 A) "Olá, meu nome é João. Olá, meu nome é Maria."
 
-B) "Olá, meu nome é ."
+~~B) "Olá, meu nome é ."~~
 
-C) "João Maria"
+~~C) "João Maria"~~
 
-D) "undefined undefined"
+~~D) "undefined undefined"~~
 
 ______
 
 # Questões dissertativas
 
-**7)** Vamos criar um programa em JavaScript para entender classes, métodos e atributos!
-Classe Animal:
-- Crie uma classe chamada Animal.
-- Adicione dois atributos: nome e idade.
-- Adicione um método chamado descrever() na classe Animal.
-  - Este método deve exibir no console uma descrição do animal com seu nome e idade.
+**7)**
 
-Criando e manipulando Animais:
-- Crie dois objetos da classe Animal: um chamado "cachorro" e outro "gato", com idades distintas.
-- Para cada animal, chame o método descrever() para ver a descrição no console.
-
-Dica: Utilize `console.log()` para exibir as informações!
-
-______
-
-**8)** Nos últimos dias tivemos a oportunidade de ter contato com Programação Orientada a Objetos, e tivemos contato com o tema "herança". Herança é um princípio de orientação a objetos, que permite que classes compartilhem atributos e métodos. Ela é usada na intenção de reaproveitar código ou comportamento generalizado ou especializar operações ou atributos. Então vamos praticar esse conteúdo nessa questão.
-Vamos criar um programa em JavaScript para entender classes, métodos, atributos e herança!
-
-Classe Animal:
-- Crie uma classe chamada Animal.
-- Adicione dois atributos: nome e idade.
-- Adicione um método descrever() que exiba no console uma descrição do animal com seu nome e idade.
-
-Classe Gato (Herda de Animal):
-- Crie uma classe chamada Gato que herda da classe Animal.
-- Adicione um atributo extra cor específico para gatos.
-- Adicione um método miar() que exiba no console o som que um gato faz.
-
-Criando Animais:
-- Crie dois objetos da classe Animal: um chamado cachorro e outro gato, com idades distintas.
-- Para o gato, também defina a cor.
-
-Chamando os Métodos:
-- Para cada animal, chame o método descrever() para ver a descrição no console.
-- Para o gato, chame o método miar() para "ouvir" o som que ele faz (é também para ver o som no console).
-
-Dica: Utilize console.log() para exibir as informações!
-
+```javascript
+// Deff a classe Animal
+class Animal {
+    // Construtor da classe com os atributos nome e idade
+    constructor(nome, idade) {
+      this.nome = nome;
+      this.idade = idade;
+    }
+  
+    // Método para descrever o animal
+    descrever() {
+      console.log(`Esse ${this.nome}, tem ${this.idade} anos e é uma gracinha`);
+    }
+  }
+  
+  // Cria objetos da classe Animal
+  const cachorro = new Animal("Cachorro", 9);
+  const gato = new Animal("Gato", 324);
+  
+  // Chama o método descrever para cada animal
+  cachorro.descrever();
+  gato.descrever();
+```
 
 ______
 
-**9)** Vamos criar um programa em JavaScript para somar notas!
-
-Classe SomadorDeNotas:
-- Crie uma classe chamada SomadorDeNotas.
-- Adicione um atributo total inicializado com 0 para armazenar a soma das notas.
-
-Método adicionarNota:
-- Adicione um método chamado adicionarNota(nota) na classe SomadorDeNotas.
-- Este método deve receber um parâmetro nota e somá-lo ao atributo total.
-
-Criando o Somador e Adicionando Notas:
-- Crie um objeto da classe SomadorDeNotas, chamado somador.
-- Utilize o método adicionarNota(nota) para adicionar algumas notas ao somador.
-
-Chamando o Método para Ver o Total:
-- Após adicionar todas as notas, chame um método verTotal() para exibir o total das notas adicionadas.
-
-Dica: Utilize console.log() para exibir as informações!
+**8)** 
+```javascript
+// DefF a classe Animal
+class Animal {
+    // Construtor da classe com os atributos nome e idade
+    constructor(nome, idade) {
+      this.nome = nome;
+      this.idade = idade;
+    }
+  
+    // Método para descrever o animal
+    descrever() {
+      console.log(`Esse ${this.nome}, tem ${this.idade} anos e é uma gracinha`);
+    }
+  }
+  
+  // Deff a classe Gato que herda de Animal
+  class Gato extends Animal {
+    // Construtor da classe Gato add o atributo cor
+    constructor(nome, idade, cor) {
+      super(nome, idade); // Chamando o construtor da classe Animal
+      this.cor = cor;
+    }
+  
+    // Método para gatos miau
+    miar() {
+      console.log(`Esse ${this.nome} ${this.cor} faz Miau!`);
+    }
+  }
+  
+  // Criando objetos das classes Animal e Gato
+  const cachorro = new Animal("Cachorro", 92);
+  const gato = new Gato("Gato", 3, "Arco-íris");
+  
+  // Chamando o método descrever
+  cachorro.descrever();
+  gato.descrever();
+  
+  // Chamando o método miar
+  gato.miar();
+```
+  
 
 
 ______
 
-**10)** Imagine que você está criando um programa em JavaScript para uma escola. Neste programa, existem diferentes tipos de funcionários, cada um com suas próprias características. Considere as seguintes classes:
+**9)** 
+```javascript
+// Deff classe SomadorDeNotas
+class SomadorDeNotas {
+    // Construtor da clas com o atributo do total
+    constructor() {
+      this.total = 0;
+    }
+    // Método para add notas no total
+    adicionarNota(nota) {
+      this.total += nota;
+    }
+    // Método para mostrar o total das notas
+    verTotal() {
+      console.log(`Total das notas: ${this.total}`);
+    }
+  }
+  
+  // Cria um objeto da classe SomadorDeNotas
+  const somador = new SomadorDeNotas();
+  
+  // Add  notas ao somador
+  somador.adicionarNota(10);
+  somador.adicionarNota(3);
+  somador.adicionarNota(6);
+  somador.adicionarNota(2);
+  
+  // Chama o método vertotal pra ver o tot das notas
+  somador.verTotal();
+  ```
 
-Funcionário:
-- atributo: Nome
-- atributo: Idade
-- atributo: Salário base
-- método: calcularSalario() - Este método calcula o salário total do funcionário. Para cada tipo de funcionário, o cálculo será diferente.
 
-Professor (herança de Funcionário):
-- atributo: Disciplina
-- atributo: Horas de aula por semana
-- método: calcularSalario() - Para calcular o salário do professor, multiplicamos suas horas de aula pelo valor da hora/aula.
+______
 
-Agora, sua tarefa é escrever um código em JavaScript que crie as classes Funcionário e Professor, com suas características e métodos descritos acima. Depois de criar as classes, crie:
-- Dois objetos do tipo Professor com informações fictícias.
-- Para cada objeto, chame o método calcularSalario() e mostre o salário calculado no console.
+**10)** 
 
-Certifique-se de explicar cada parte do código utilizando comentários, explicando para que serve cada atributo e método, bem como a lógica por trás do cálculo de salário para o tipo de funcionário Professor.
+
+```javascript
+// Deff a classe Funcionário
+class Funcionario {
+    // Construtor de class com tds os atributos dos funcionários
+    constructor(nome, idade, salarioBas) {
+      this.nome = nome;
+      this.idade = idade;
+      this.salarioBas = salarioBas;
+    }
+  
+    // Método pra calc o salário
+    calcularSalario() {
+    }
+  }
+  
+  // Deff classe Professor que herda de Funcionário
+  class Professor extends Funcionario {
+    // Construtor da class Professor
+    constructor(nome, idade, salarioBas, disciplina, hAulaSem) {
+      super(nome, idade, salarioBas); 
+      this.disciplina = disciplina;
+      this.hAulaSem = hAulaSem;
+    }
+  
+    // Sobrescrevendo o método calcularSalario pra profs
+    calcularSalario() {
+      const valorHoraAula = 3;
+      const salarioProfessor = this.hAulaSem * valorHoraAula;
+      return this.salarioBas + salarioProfessor;
+    }
+  }
+  
+  // Cria dois objetos do tipo Professor com info
+  const professor1 = new Professor("Solrac", 13, 900, "Matemática", 20);
+  const professor2 = new Professor("Carlos", 24, 200, "História", 15);
+  
+  // Chamando o método calcularSalario para cada prof
+  console.log(`${professor1.nome}: Salário total - ${professor1.calcularSalario()} reais`);
+  console.log(`${professor2.nome}: Salário total - ${professor2.calcularSalario()} reais`);
+  
+```
