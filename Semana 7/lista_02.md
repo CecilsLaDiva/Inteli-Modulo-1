@@ -177,26 +177,26 @@ ______
 
 Escolha a opção que responde corretamente:
 
-A) Setup -> Update -> Draw
+~~A) Setup -> Update -> Draw~~
 
 B) Preload -> Create -> Update
 
-C) Load -> Initialize -> Render
+~~C) Load -> Initialize -> Render~~
 
-D) Begin -> Play -> End
+~~D) Begin -> Play -> End~~
 ______
 
 **6)** Qual é o objetivo principal do módulo Arcade Physics em Phaser.js?
 
 Escolha a opção que responde corretamente:
 
-A) Renderizar gráficos 3D para jogos em HTML5.
+~~A) Renderizar gráficos 3D para jogos em HTML5.~~
 
 B) Simular interações físicas realistas, como colisões e movimentos, em jogos 2D.
 
-C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.
+~~C) Criar efeitos de áudio para melhorar a experiência do usuário em jogos.~~
 
-D) Gerenciar a lógica do jogo e a sincronização de eventos em jogos multiplayer.
+~~D) Gerenciar a lógica do jogo e a sincronização de eventos em jogos multiplayer.~~
 
 ______
 
@@ -234,6 +234,39 @@ Classe FormaGeometrica:
 
     Método CalcularArea():
         # Implementação genérica para cálculo de área, a ser sobrescrita pelas subclasses.
+ 
+Classe circulo = filha de FormaGeométrica ( cor, raio)
+
+	Atributos:
+		
+		-herda cor
+		-raio
+
+	Método Construtor (cor);
+
+		Cor #FB2191 (rosa)
+
+	Método CalcularArea:
+		pi * raio^2 = area circulo 
+
+		escrever resultado --> area circulo
+
+	
+Classe retângulo = filha de FormaGeométrica (cor, lados )
+
+	Atributos:
+
+		-cor
+		-lados = 4
+
+	Método Construtor (cor);
+
+		Cor #00A1DE (azul)
+
+	Método CalcularArea:
+		base * altura = area retângulo
+		
+		escrever resultado --> area retângulo
 
 ```
 
@@ -241,9 +274,33 @@ ______
 
 **9)** Você foi contratado(a) como estagiário(a) da Tesla e está participando do desenvolvimento de um programa para simular o desempenho de um carro elétrico em uma corrida. Seu objetivo é determinar em quantos minutos o carro levará para completar uma determinada distância, levando em consideração uma velocidade inicial e uma taxa de aceleração constante. No entanto, você deseja garantir que o carro não exceda uma velocidade máxima nem que a corrida demore mais do que um tempo máximo. Implemente a lógica dessa simulação em pseudocódigo.
 
-Considere a fórumla de atualização velocidade:
 ```
-    velocidade = velocidadeInicial + aceleracao*tempo
+Classe CarroTesla:
+    Atributos:
+        velocidadeInicial
+        aceleração
+        velocidadeMáxima
+        tempoMáximo
+        distância
+
+    Método Construtor(velocidadeInicial, aceleração, velocidadeMáxima, tempoMáximo, distância):
+        velocidadeInicial = x
+        aceleração = y
+        velocidadeMáxima <= z
+        tempoMáximo <= t
+        distância = h
+
+    Método calcularTempoDeDeslocamento:
+        
+        tempoEstimado = distância / velocidadeMáxima
+        
+        Se tempoEstimado > tempoMáximo então:
+
+            Escrever("Não é possível completar a corrida dentro do tempo máximo.")
+
+        Senão:
+
+            Escrever("É possível completar a corrida dentro do tempo máximo. Tempo estimado:", tempoEstimado, "minutos.")
 ```
 
 ______
@@ -251,27 +308,30 @@ ______
 **10)** Uma matriz é uma coleção bidimensional de elementos, organizados em linhas e colunas. A seguir, é fornecida a implementação da função SomaDeMatrizes(matrizA, matrizB), que calcula a soma de duas matrizes. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação de duas matrizes.
 
 ```
-Função SomaDeMatrizes(matrizA, matrizB):
-    # Verifica se as duas matrizes têm o mesmo número de linhas e colunas
-    Se tamanho(matrizA) ≠ tamanho(matrizB) então:
-        Retornar "As matrizes não podem ser somadas. Elas têm dimensões diferentes."
-    Senão:
-        linhas <- tamanho(matrizA)
-        colunas <- tamanho(matrizA[0]) # Considerando que todas as linhas têm o mesmo número de colunas
-        matrizResultado <- novaMatriz(linhas, colunas)
+def MultiplicaMatrizes(matrizA, matrizB):
+    linhasA = len(matrizA)
+    colunasA = len(matrizA[0])
+    linhasB = len(matrizB)
+    colunasB = len(matrizB[0])
 
-        # Loop para percorrer cada elemento das matrizes e calcular a soma
-        Para i de 0 até linhas-1 faça:
-            Para j de 0 até colunas-1 faça:
-                matrizResultado[i][j] <- matrizA[i][j] + matrizB[i][j]
+    if colunasA != linhasB:
+        return "Não é possível multiplicar as matrizes. O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda matriz."
 
-        Retornar matrizResultado
+    matrizResultado = [[0 for _ in range(colunasB)] for _ in range(linhasA)]
 
-# Exemplo de uso da função
-matrizA <- [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-matrizB <- [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+    for i in range(linhasA):
+        for j in range(colunasB):
+            for k in range(colunasA):  # ou equivalente, linhasB
+                matrizResultado[i][j] += matrizA[i][k] * matrizB[k][j]
 
-matrizSoma <- SomaDeMatrizes(matrizA, matrizB)
-Escrever("Soma das matrizes:")
-ImprimirMatriz(matrizSoma)
+    return matrizResultado
+
+matrizA = [[1, 2, 3], [4, 5, 6]]
+matrizB = [[7, 8], [9, 10], [11, 12]]
+
+matrizMultiplicacao = MultiplicaMatrizes(matrizA, matrizB)
+print("Multiplicação das matrizes:")
+for linha in matrizMultiplicacao:
+    print(linha)
+
 ```
