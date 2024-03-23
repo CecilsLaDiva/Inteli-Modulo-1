@@ -1,20 +1,3 @@
-# Instruções
-
-- Faça uma cópia deste arquivo .md para um repositório próprio
-- Resolva as 6 questões objetivas assinalando a alternativa correta
-- Resolva as 4 questões dissertativas escrevendo no próprio arquivo .md
-  - lembre-se de utilizar as estruturas de código como ``esta aqui com ` `` ou
-```javascript
-//esta aqui com ```
-let a = "olá"
-let b = 10
-print(a)
-```
-- Resolva as questões com uso do Visual Studio Code ou ambiente similar.
-- Teste seus códigos antes de trazer a resposta para cá.
-- Cuidado com ChatGPT e afins: entregar algo só para ganhar nota não faz você aprender e ficar mais inteligente. Não seja dependente da máquina! (E não se envolva em plágio!)
-- ao final, publique seu arquivo lista_02.md com as respostas em seu repositório, e envie o link pela Adalove. 
-
 # Questões objetivas
 
 **1)** Considere o seguinte código JavaScript:
@@ -40,13 +23,13 @@ console.log("A soma dos números é:", soma);
 ```
 Qual das seguintes alternativas melhor descreve o que o código faz?
 
-A) O código avalia a expressão booleana, imprime o resultado `false`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
+~~A) O código avalia a expressão booleana, imprime o resultado `false`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.~~
 
 B) O código avalia a expressão booleana, imprime o resultado `true`, calcula a soma dos números de 1 a 5 e imprime o resultado no console.
 
-C) O código avalia a expressão booleana, imprime o resultado `true` e verifica se o número 5 está presente na lista de números.
+~~C) O código avalia a expressão booleana, imprime o resultado `true` e verifica se o número 5 está presente na lista de números.~~
 
-D) O código avalia a expressão booleana, imprime o resultado `false` e ordena a lista de números em ordem crescente.
+~~D) O código avalia a expressão booleana, imprime o resultado `false` e ordena a lista de números em ordem crescente.~~
 
 
 ______
@@ -104,13 +87,13 @@ function calculaOrcamento2(){
 
 Escolha a opção que responde corretamente qual seria a saída após a execução de cada função:
 
-A) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -1050.'
+~~A) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -1050.'~~
 
 B) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -1050.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -100.'
 
-C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -1050.'
+~~C) A saída de calcularOrcamento() seria: 'Seu saldo é negativo de -100.' e a de calcularOrcamento2() seria: 'Seu saldo é negativo de -1050.'~~
 
-D) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -100.'
+~~D) As funções calcularOrcamento() e calcularOrcamento2() teriam a mesma saída: 'Seu saldo é negativo de -100.'~~
 
 ______
 
@@ -131,11 +114,11 @@ if (numero % 2 === 0) {
  Qual das seguintes alternativas é a descrição mais precisa do que o código faz?
 
 
-A) O código verifica se o número é divisível por 3 e, se for, exibe a mensagem "O número é divisível por 3!".
+~~A) O código verifica se o número é divisível por 3 e, se for, exibe a mensagem "O número é divisível por 3!".~~
 
-B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensagem "O número é par!". Se for ímpar, exibe a mensagem "O número é ímpar!".
+~~B) O código verifica se o número é par ou ímpar. Se for par, exibe a mensagem "O número é par!". Se for ímpar, exibe a mensagem "O número é ímpar!".~~
 
-C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".
+~~C) O código verifica se o número é par, ímpar ou divisível por 3. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3, exibe a mensagem "O número é divisível por 3!". Se for ímpar, exibe a mensagem "O número é ímpar e não é divisível por 3!".~~
 
 D) O código verifica se o número é par, se é divisível por 3 ou se é ímpar. Se for par, exibe a mensagem "O número é par!". Se for divisível por 3 (e não for par), exibe a mensagem "O número é divisível por 3!". Se for ímpar (e não for divisível por 3), exibe a mensagem "O número é ímpar e não é divisível por 3!".
 
@@ -167,38 +150,13 @@ for (var i = 0; i < valorCompras.length; i++) {
 
 Escolha a opção que responde corretamente:
 
-A)
-Compra 1 aprovada. Saldo restante: 800
-
-Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
-Compra 3 aprovada. Saldo restante: 400
-
-Compra 4 aprovada com limite de crédito. Saldo restante: 0
-
-Compra 5 aprovada. Saldo restante: -200
+~~A)Compra 1 aprovada. Saldo restante: 800Compra 2 aprovada com limite de crédito. Saldo restante: 700Compra 3 aprovada. Saldo restante: 400Compra 4 aprovada com limite de crédito. Saldo restante: 0Compra 5 aprovada. Saldo restante: -200~~
 
 
-B)
-Compra 1 aprovada. Saldo restante: 800
-
-Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
-Compra 3 aprovada. Saldo restante: 200
-
-Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
-
-Compra 5 negada. Saldo insuficiente e limite de crédito excedido.
+~~B)Compra 1 aprovada. Saldo restante: 800Compra 2 aprovada com limite de crédito. Saldo restante: 700Compra 3 aprovada. Saldo restante: 200Compra 4 negada. Saldo insuficiente e limite de crédito excedido.Compra 5 negada. Saldo insuficiente e limite de crédito excedido.~~
 
 
-C)
-Compra 1 aprovada. Saldo restante: 800
-
-Compra 2 aprovada com limite de crédito. Saldo restante: 700
-
-Compra 3 aprovada. Saldo restante: 400
-
-Compra 4 negada. Saldo insuficiente e limite de crédito excedido.
+~~C)Compra 1 aprovada. Saldo restante: 800Compra 2 aprovada com limite de crédito. Saldo restante: 700Compra 3 aprovada. Saldo restante: 400Compra 4 negada. Saldo insuficiente e limite de crédito excedido.~~
 
 
 D)
@@ -245,7 +203,23 @@ ______
 # Questões dissertativas
 
 **7)** Implemente o pseudocódigo para o algoritmo representado no fluxograma da imagem.
-![Uma imagem](assets/image.png)
+
+```
+prompt = (insira idade) 
+
+idade igual a 'x'
+
+se x menor que 16 
+
+escreva "Não pode votar"
+
+se x maior ou igual a 16 e menor que 18
+
+escreva "Voto facultativo"
+
+se não, escreva "Voto obrigatório"
+```
+
 ______
 
 **8)** Considere a implementação da classe base FormaGeometrica em um sistema de modelagem de formas geométricas. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Retangulo e Circulo, que herdam da classe FormaGeometrica, adicionando atributos específicos e métodos para calcular a área de um retângulo e de um círculo, respectivamente.
